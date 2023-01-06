@@ -1,0 +1,79 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.Figure {
+  font-family: sans-serif;
+  text-align: center;
+  padding-top: 200px;
+  background: #392767;
+  min-height: 100vh;
+  color: #e5daff;
+}
+
+/* h1{
+  padding-bottom: 100px;
+} */
+
+
+
+.number-inputs {
+  margin-top: 80px;
+}
+
+/* button {
+  
+  font-size: 80px;
+  border-radius: 10px;
+  border: 1px solid #d2c0fd;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
+  background: #d2c0fd;
+  color: #2a1263;
+} */
+
+
+
+button {
+  width: 25%;
+  padding-right: 30px 30px;
+  font-size: 30px;
+  border-radius: 20px 40px;
+  background: #5f30e6;
+  border: none;
+  margin-bottom: 50px;
+  color: #d7cbf7;
+  cursor: pointer;
+}
+
+
+
+
+  .marquee-rtl {
+    max-width: 39em; /* largeur de la fenêtre */
+    margin: 1em auto 2em;
+    border: 4px solid  #f16e00;
+    overflow: hidden; /* masque tout ce qui dépasse */
+    box-shadow: 0 0.25em 0.5em #CCC, inset 0 0 1em 0.25em #CCC;
+  }
+  /* le bloc défilant */
+  .marquee-rtl >:first-child {
+    display: inline-block; /* modèle de boîte en ligne */
+    padding-right: 2em; /* un peu d'espace pour la transition */
+    padding-left: 100%; /* placement à droite du conteneur */
+    white-space: nowrap; /* pas de passage à la ligne */
+    animation: defilement-rtl 15s infinite linear;
+  }
+  @keyframes defilement-rtl {
+    0% {
+      transform: translate3d(0, 0, 0); /* position initiale à droite */
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0); /* position finale à gauche */
+    }
+  }
+
